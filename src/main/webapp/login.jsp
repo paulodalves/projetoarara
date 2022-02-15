@@ -23,7 +23,7 @@
 
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="locais.jsp">Locais</a></li>
+                <li><a href="locais.html">Locais</a></li>
                 <li><a href="fale_conosco.jsp">Fale conosco</a></li>
                 <li><a href="UserCadastrar" class="ativo">Login</a></li>
             </ul>
@@ -63,8 +63,8 @@
                         </fieldset>
                         <fieldset>
                             <div class="container">
-                                <input type="password" name="d" id="senha" required>
-                                <label for="senha">Confirmar Senha</label>
+                                <input type="password" name="confirma" id="senha" required>
+                                <label for="confirma">Confirmar Senha</label>
                             </div>
                         </fieldset>
                         <fieldset>
@@ -81,7 +81,7 @@
 
                 <div class="form-2">
 
-                    <form>
+                    <form action="Login" method="post">
                         <h1 class="titulo-login">Login</h1>
                         <fieldset>
                             <div class="container">
@@ -91,7 +91,7 @@
                         </fieldset>
                         <fieldset>
                             <div class="container">
-                                <input type="text" name="senha" id="senha" required>
+                                <input type="password" name="senha" id="senha" required>
                                 <label for="senha">Senha</label>
                             </div>
                         </fieldset>

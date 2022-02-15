@@ -2,6 +2,7 @@ package com.araratour.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.araratour.data.MySqlConnection;
@@ -34,5 +35,27 @@ public class UsuarioDAO {
 			System.out.println("-- Erro na inclusão! " + e.getMessage());
 		}
 
+	}
+	
+	public boolean validarLogin(String email, String senha)  {
+		
+		sql = "SELECT * FROM usuario WHERE email='"+email+"' AND senha='"+senha+"'";
+		
+		try {
+
+		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+		
+		ResultSet resultSet = preparedStatement.executeQuery();
+		
+		if (resultSet.next()) {
+			return true;
+		} else {
+			return false;
+		}
+		
+		} catch (SQLException e) {
+			System.out.println("-- Erro na colsuta! " + e.getMessage());
+			return false;
+		}
 	}
 }

@@ -25,10 +25,10 @@
 			</div>
 
 			<ul>
-				<li><a href="index.html">Página Inicial</a></li>
-				<li><a href="locais.html">Locais</a></li>
-				<li><a href="fale_conosco.jsp" class="ativo">Fale conosco</a></li>
-				<li><a href="UserCadastrar">Login</a></li>
+				<li><a href="index-logado.html">Página Inicial</a></li>
+				<li><a href="locais-logado.html">Locais</a></li>
+				<li><a href="fale_conosco-logado.jsp" class="ativo">Fale conosco</a></li>
+				<li><a href="index.html">Logout</a></li>
 			</ul>
 			<label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
 		</nav>
@@ -64,7 +64,7 @@
 				</fieldset>
 				<fieldset>
 					<div class="container button-centraliza">
-						<button type="submit" onclick="enviar()">Enviar</button>
+						<button type="submit">Enviar</button>
 					</div>
 				</fieldset>
 				<input type="hidden" name="_captcha" value="false">
@@ -96,18 +96,6 @@
         </footer>
         -->
 	</header>
-	<script>
-		function enviar() {
-			let nome = document.getElementById('nome').value
-			let email = document.getElementById('email').value
-			let assunto = document.getElementById('assunto').value
-			let mensagem = document.getElementById('mensagem').value
-			
-			if (mansagem != "") {
-				alert("Mensagem enviada com sucesso!")
-			}
-		}
-	</script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../imagens/imagem01.jpg");
     background-position: center;
     background-size: cover;
-    animation: change 10s infinite ease-in-out;
+    animation: change 20s infinite ease-in-out;
 }
 
 nav{
@@ -111,7 +111,7 @@ fieldset{
 }
 
 .rede-social img {
-    width: 30px;
+    width: 25px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
@@ -124,7 +124,7 @@ fieldset{
     bottom: 0;
     width: 100vw;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     height: 50px;
     display: flex;

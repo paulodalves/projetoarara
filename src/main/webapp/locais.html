@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style-login.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<title>Maps Project</title>
+<style>
+.display-inline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	height: 75%;
+	gap: 5%;
+}
+
+#mapa-legenda {
+	color: white;
+	width: 30%;
+	text-align: justify;
+}
+
+#map {
+	margin-top: 200px;
+	height: 100%;
+	width: 50%;
+	border: 5px solid white;
+	border-radius: 3px;
+}
+
+</style>
+</head>
+<body>
+
+	<header>
+		<nav class="menu">
+			<input type="checkbox" id="check">
+			<div class="logo">
+				<img src="imagens/Logo_Arara_Turismo.png">
+			</div>
+
+			<ul>
+				<li><a href="index.html" >Página Inicial</a></li>
+				<li><a href="locais.html" class="ativo">Locais</a></li>
+				<li><a href="fale_conosco.jsp">Fale conosco</a></li>
+				<li><a href="UserCadastrar">Login</a></li>
+			</ul>
+			<label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+		</nav>
+
+		<section class="display-inline">
+
+			<div id="mapa-legenda">
+				<h1>Turismo em Terras Indígenas</h1>
+				<p>Escolha uma das aldeias no mapa ao lado e entre em contato
+					para agendar uma visita. Participe de atividades turísticas
+					envolvendo a vivência e experiências autênticas e contato direto
+					com os modos de vida e identidade de grupos étnicos.</p>
+			</div>
+
+			<div id="map"></div>
+
+		</section>
+
+
+		<div class="rodape">
+			<div class="rede-social">
+				<a href="#"><img src="imagens/twitter.png" alt="" /></a> <a
+					href="#"><img src="imagens/facebook.png" alt="" /></a> <a href="#"><img
+					src="imagens/instagram.png" alt="" /></a>
+			</div>
+			<div class="copy-right">&copy; 2022 - Arara Turismo</div>
+		</div>
+
+		<!--
+        <footer>
+                <div class="rede-social">
+                    <a href="#"><img src="imagens/twitter.png" alt="" /></a>
+                    <a href="#"><img src="imagens/facebook.png" alt="" /></a>
+                    <a href="#"><img src="imagens/instagram.png" alt="" /></a>
+                </div>
+            <div class="copy-right">
+                &copy; 2022 - Arara Turismo
+            </div>
+        </footer>
+        -->
+	</header>
+
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="script/main.js"></script>
+</body>
+</html>

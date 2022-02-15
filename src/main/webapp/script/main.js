@@ -19,51 +19,53 @@ const marker4 = L.marker([-18.560731, -52.823945]).addTo(map);
 const marker5 = L.marker([-10.398466, -50.012593]).addTo(map);
 
 // mensagem
-//marker.bindPopup('<h3>Teatro de Manaus</h3>')
-
-
 
 let tamplate1 = `
-	<h3>Teatro de Manaus</h3>
+	<h3>Nome da Aldeia</h3>
+	<p>Contato<p>
 	<div style="text-align: center;">
-		<img width="150px" heigth="150px" src="imagens/teatro-amazonas.jpg" />
+		<img width="150px" heigth="150px" src="imagens/imagem01.jpg" />
 	</div>
 `;
 
 marker1.bindPopup(tamplate1);
 
 let tamplate2 = `
-	<h3>Teatro de Manaus</h3>
+	<h3>Nome da Aldeia</h3>
+	<p>Contato<p>
 	<div style="text-align: center;">
-		<img width="150px" heigth="150px" src="imagens/teatro-amazonas.jpg" />
+		<img width="150px" heigth="150px" src="imagens/imagem01.jpg" />
 	</div>
 `;
 
-marker2.bindPopup(tamplate2);
+marker1.bindPopup(tamplate2);
 
 let tamplate3 = `
-	<h3>Teatro de Manaus</h3>
+	<h3>Nome da Aldeia</h3>
+	<p>Contato<p>
 	<div style="text-align: center;">
-		<img width="150px" heigth="150px" src="imagens/teatro-amazonas.jpg" />
+		<img width="150px" heigth="150px" src="imagens/imagem01.jpg" />
 	</div>
 `;
 
-marker3.bindPopup(tamplate3);
+marker1.bindPopup(tamplate3);
 
 let tamplate4 = `
-	<h3>Teatro de Manaus</h3>
+	<h3>Nome da Aldeia</h3>
+	<p>Contato<p>
 	<div style="text-align: center;">
-		<img width="150px" heigth="150px" src="imagens/teatro-amazonas.jpg" />
+		<img width="150px" heigth="150px" src="imagens/imagem01.jpg" />
 	</div>
 `;
 
-marker4.bindPopup(tamplate4);
+marker1.bindPopup(tamplate4);
 
 let tamplate5 = `
-	<h3>Teatro de Manaus</h3>
+	<h3>Nome da Aldeia</h3>
+	<p>Contato<p>
 	<div style="text-align: center;">
-		<img width="150px" heigth="150px" src="imagens/teatro-amazonas.jpg" />
+		<img width="150px" heigth="150px" src="imagens/imagem01.jpg" />
 	</div>
 `;
 
-marker5.bindPopup(tamplate5);
+marker1.bindPopup(tamplate5);

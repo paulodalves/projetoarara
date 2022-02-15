@@ -26,7 +26,7 @@
 
 			<ul>
 				<li><a href="index.html">Página Inicial</a></li>
-				<li><a href="">Locais</a></li>
+				<li><a href="locais.jsp">Locais</a></li>
 				<li><a href="fale_conosco.jsp" class="ativo">Fale conosco</a></li>
 				<li><a href="UserCadastrar">Login</a></li>
 			</ul>

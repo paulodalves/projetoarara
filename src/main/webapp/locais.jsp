@@ -1,16 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <title>Página Inicial</title>
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+ <link rel="stylesheet" href="css/style-map.css" />
+  <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<title>Maps Project</title>
 </head>
 <body>
-    <header>
-          
+
+<header>
         <nav class="menu">
             <input type="checkbox" id="check">  
             <div class="logo">
@@ -18,7 +21,7 @@
             </div>
             
             <ul>
-                <li><a href="index.html" class="ativo">Página Inicial</a></li>
+                <li><a href="index.html" class="ativo">P�gina Inicial</a></li>
                 <li><a href="locais.jsp">Locais</a></li>
                 <li><a href="fale_conosco.jsp">Fale conosco</a></li>
                 <li><a href="UserCadastrar">Login</a></li>
@@ -26,11 +29,10 @@
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
         </nav>
 
-        <section class="principal">
-            <h2>Arara Turismo</h2>
-            <div class="links">
-                <a href="">Saber mais</a>
-            </div>
+        <section class="principal map-left">
+            
+            <div id="map"></div>
+            
         </section>
 
         <div class="rodape">
@@ -57,5 +59,9 @@
         </footer>
         -->
     </header>
+	
+
+	 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="script/main.js"></script>
 </body>
 </html>

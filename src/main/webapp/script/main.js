@@ -14,7 +14,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 // Adiciona marcação
 var marker = L.marker([-23.658263, -46.648904]).addTo(map);
+marker.bindPopup('Sao Paulo');
+
 var marker = L.marker([-7.811690, -36.471794]).addTo(map);
+marker.bindPopup('Refice');
 var marker = L.marker([-3.068994, -60.042304]).addTo(map);
+marker.bindPopup('Amazonas');
 
 
